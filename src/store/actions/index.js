@@ -13,7 +13,7 @@ export const CLEAN_POKEMONS = 'CLEAN_POKEMONS';
 
 export function fetchPokemons() {
     return async function(dispatch) {
-        await axios.get('https://pokemon-back-0.herokuapp.com//api/pokemons')
+        await axios.get('https://pokemon-back-0.herokuapp.com/api/pokemons')
         .then(pokemons => {
             dispatch({
                 type: FETCH_POKEMONS,
