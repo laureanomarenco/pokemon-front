@@ -15,7 +15,7 @@ export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
 export function fetchPokemons() {
     return async function(dispatch) {
-        await axios.get('http://localhost:3001/api/pokemons')
+        await axios.get('https://pokemon-back-0.herokuapp.com/api/pokemons')
         .then(pokemons => {
             dispatch({
                 type: FETCH_POKEMONS,
@@ -28,7 +28,7 @@ export function fetchPokemons() {
 
 export function searchPokemons(search) {
     return async function(dispatch) {
-        await axios.get(`http://localhost:3001/api/pokemons?name=${search}`)
+        await axios.get(`https://pokemon-back-0.herokuapp.com/api/pokemons?name=${search}`)
         .then(pokemons => {
             dispatch({
                 type: SEARCH_POKEMONS,
@@ -41,7 +41,7 @@ export function searchPokemons(search) {
 
 export function getPokemonDetails(id) {
     return async function(dispatch) {
-        let pokemons = await axios.get(`http://localhost:3001/api/pokemons/${id}`)
+        let pokemons = await axios.get(`https://pokemon-back-0.herokuapp.com/api/pokemons/${id}`)
 
             return dispatch({
                 type: GET_POKEMON_DETAILS,
@@ -53,13 +53,13 @@ export function getPokemonDetails(id) {
 
 export function createPokemon(pokemon) {
     return async function(dispatch) {
-        await axios.post('http://localhost:3001/api/pokemons', pokemon)
+        await axios.post('https://pokemon-back-0.herokuapp.com/api/pokemons', pokemon)
     }
 }
 
 export function fetchTypes() {
     return async function(dispatch) {
-        await axios.get('http://localhost:3001/api/types')
+        await axios.get('https://pokemon-back-0.herokuapp.com/api/types')
         .then(types => {
             console.log(types)
             dispatch({
