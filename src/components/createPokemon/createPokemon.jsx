@@ -53,10 +53,9 @@ export default function CreatePokemon() {
     height: null,
     weight: null,
     imageDefault: "",
-    imageShiny: "",
     types: [],
   });
-
+  console.log(pokemon.imageDefault)
   const [errors, setErrors] = useState({});
   let types = useSelector((state) => state.types);
 
@@ -96,12 +95,13 @@ export default function CreatePokemon() {
   function onSubmit(e) {
     e.preventDefault();
     let errors = validate(pokemon)
-    if(!Object.keys(errors)){
+    if(Object.entries(errors).length === 0){
       dispatch(createPokemon(pokemon));
       alert('Pokemon created, go back to see it');
       history.push('/')
+    } else {
+      alert('Pokemon not created, you need pass all properties')
     }
-    alert('Pokemon not created, you need pass all properties')
   }
 
   function handleDeleteSelection(e) {
@@ -232,6 +232,9 @@ export default function CreatePokemon() {
                 );
               })}
             </select>
+          )}
+          {errors.types && (
+            <span className={c.danger}>{errors.types}</span>
           )}
           <input className={c.btn_submit} type="submit" value="Submit" />
         </form>

@@ -2,23 +2,41 @@
   .inputs {
     width: 80vw;
     margin: 0 1vh 0 1vh;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    background-color: #ffffffec;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
   }
   .select {
     width: 80vw;
     margin: 2vh;
     font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    background-color: #ffffffec;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
   }
 }
 
 @media (min-width: 600px) {
   .inputs {
-    width: 60vw;
+    width: 30vw;
     margin: 0 1vh 0 1vh;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    background-color: #ffffffec;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
   }
   .select {
-    width: 60vw;
+    width: 30vw;
     margin: 2vh;
     font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    background-color: #ffffffec;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
   }
 }
 

@@ -77,5 +77,9 @@ export default function validate(state) {
     errors.imageDefault = "Your image must be a valid URL";
   }
 
+  if(state.types.length === 0) {
+    errors.types = 'Your Pokemons need at least one type';
+  }
+
   return errors;
 }
