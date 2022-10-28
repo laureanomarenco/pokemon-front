@@ -1,9 +1,11 @@
-# pokemon-front
+# Pokemon 👾
 
 Hola, bienvenido a mi proyecto tributo al universo pokemon. 
 Si te interesa utilizarlo para ver cómo funciona o reutilizarlo en un proyecto propio no tienes más que descargar el repositorio, abrirlo en tu IDE preferido y hacer.
 1. npm install
 2. npm start
+
+Listo, ya tendrás funcionando un frontend que consulta la PokeApi. Si quieres poder crear tus propios pokemones todavía te faltará inicializar el backend [Aquí puede ver como hacerlo](https://github.com/laureanomarenco/pokemon-back)
 
 ## Idea principal de diseño
 El diseño fue basado en parte homenajeando algunos de las caracteristicas de estilo más importantes del universo pokemon.
