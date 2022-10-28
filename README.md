@@ -25,4 +25,4 @@ Muchas gracias por interesarte en mi proyecto, ante cualquier duda o sugerencia 
 
 
 
-<img align="center"  src= "https://res.cloudinary.com/dg7ssgadn/image/upload/v1666983221/banner_ndasjy.png" alt= "laureano"/>
+<img align="center"  src= "https://res.cloudinary.com/dg7ssgadn/image/upload/v1666984202/banner_njqvvp.png" alt= "laureano"/>
