@@ -22,3 +22,7 @@ Y finalmente, en el detalle de cada pokemon me base en las cartas pokemon! <br/>
 <img align="center"  src= "https://res.cloudinary.com/dg7ssgadn/image/upload/v1666975417/poke3_qjf3p9.png" alt= "pokemon"/>
 
 Muchas gracias por interesarte en mi proyecto, ante cualquier duda o sugerencia no dudes en escribirme, puede enviarme mails a través de mi [Portfolio](https://laureanomarenco.vercel.app)
+
+
+
+<img align="center"  src= "https://res.cloudinary.com/dg7ssgadn/image/upload/v1666983221/banner_ndasjy.png" alt= "laureano"/>
