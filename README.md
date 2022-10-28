@@ -7,6 +7,9 @@ Si te interesa utilizarlo para ver cómo funciona o reutilizarlo en un proyecto 
 
 Listo, ya tendrás funcionando un frontend que consulta la PokeApi. Si quieres poder crear tus propios pokemones todavía te faltará inicializar el backend [Aquí puede ver como hacerlo](https://github.com/laureanomarenco/pokemon-back)
 
+## Herramientas utilizadas
+Utilicé [React](https://reactjs.org/) como framework con [Redux](https://es.redux.js.org/) para el manejo de estados globales. Los estilos fueron dados con [CSS](https://developer.mozilla.org/es/docs/Web/CSS) integrandolas a traves de css.modules.
+
 ## Idea principal de diseño
 El diseño fue basado en parte homenajeando algunos de las caracteristicas de estilo más importantes del universo pokemon.
 Por ejemplo: utilicé fuente e imagenes con estetica 8 bits tributando a los viejos juegos pokemon (de hecho hay una rama en la que estoy desarrollando una batalla pokemon, te invito a que la mires)
