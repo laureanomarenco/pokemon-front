@@ -15,7 +15,7 @@ export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
 export function fetchPokemons() {
     return async function(dispatch) {
-        await axios.get('https://pokemon-back-production-cd80.up.railway.app/pokemons')
+        await axios.get('https://pokemon-back-production-cd80.up.railway.app/api/pokemons')
         .then(pokemons => {
             dispatch({
                 type: FETCH_POKEMONS,
@@ -28,7 +28,7 @@ export function fetchPokemons() {
 
 export function searchPokemons(search) {
     return async function(dispatch) {
-        await axios.get(`https://pokemon-back-production-cd80.up.railway.app/pokemons?name=${search}`)
+        await axios.get(`https://pokemon-back-production-cd80.up.railway.app/api/pokemons?name=${search}`)
         .then(pokemons => {
             dispatch({
                 type: SEARCH_POKEMONS,
@@ -41,7 +41,7 @@ export function searchPokemons(search) {
 
 export function getPokemonDetails(id) {
     return async function(dispatch) {
-        let pokemons = await axios.get(`https://pokemon-back-production-cd80.up.railway.app/pokemons/${id}`)
+        let pokemons = await axios.get(`https://pokemon-back-production-cd80.up.railway.app/api/pokemons/${id}`)
 
             return dispatch({
                 type: GET_POKEMON_DETAILS,
@@ -53,13 +53,13 @@ export function getPokemonDetails(id) {
 
 export function createPokemon(pokemon) {
     return async function(dispatch) {
-        await axios.post('https://pokemon-back-production-cd80.up.railway.app/pokemons', pokemon)
+        await axios.post('https://pokemon-back-production-cd80.up.railway.app/api/pokemons', pokemon)
     }
 }
 
 export function fetchTypes() {
     return async function(dispatch) {
-        await axios.get('https://pokemon-back-production-cd80.up.railway.app/types')
+        await axios.get('https://pokemon-back-production-cd80.up.railway.app/api/types')
         .then(types => {
             console.log(types)
             dispatch({
